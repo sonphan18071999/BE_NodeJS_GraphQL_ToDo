@@ -36,15 +36,13 @@ const server = new ApolloServer({
   RootSubscriptionType
 });
 
-
 /**
  * This is use to display appollo server
  */
 
 const { url } =  startStandaloneServer(server, {
-  listen: { port: 4000 },
+  listen: { port: 4000 }
 });
-
 
 console.log(`🚀  Server ready`);
 
