@@ -27,14 +27,14 @@ app.use(cors());
 
 // Serve all methods on /graphql
 // where the GraphQL over HTTP express request handler is
-app.all("/graphql", createHandler({ schema }));
+// app.all("/graphql", createHandler({ schema }));
 
-const server = new ApolloServer({
-  schema,
-  RootQueryType,
-  RootMutationType,
-  RootSubscriptionType
-});
+// const server = new ApolloServer({
+//   schema,
+//   RootQueryType,
+//   RootMutationType,
+//   RootSubscriptionType
+// });
 
 //Configure port 
 app.get('/api/hello', (req, res) => {
