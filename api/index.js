@@ -37,7 +37,7 @@ app.use(cors());
 // });
 
 //Configure port 
-app.get('/api/hello', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ message: 'Hello from Express on Vercel!' });
 });
 
