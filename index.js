@@ -8,7 +8,7 @@ const {
   RootQueryType,
   RootMutationType,
   RootSubscriptionType,
-} = require("../types");
+} = require("./types");
 const {ApolloServer} = require("@apollo/server");
 const { startStandaloneServer } = require("@apollo/server/standalone");
 
