@@ -36,15 +36,24 @@ const server = new ApolloServer({
   RootSubscriptionType
 });
 
+//Configure port 
+app.get('/api/hello', (req, res) => {
+  res.status(200).json({ message: 'Hello from Express on Vercel!' });
+});
+
+module.exports = app;
+
+
+
 /**
  * This is use to display appollo server
  */
 
-const { url } =  startStandaloneServer(server, {
-  listen: { port: 4000 }
-});
+// const { url } =  startStandaloneServer(server, {
+//   listen: { port: 4000 }
+// });
 
-console.log(`🚀  Server ready`);
+// console.log(`🚀  Server ready`);
 
 /**
  * Socket
